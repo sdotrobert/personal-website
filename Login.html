@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/Login.css">
+	<meta name="description" content="Log in to unlock more funny things happened in my life !">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+	<title>Log in !</title>
+</head>
+
+<body>
+	<div class="container">
+		<img id="sulogo" src="content\RobertSuLogo.png">
+		<div class="menu">
+			<a href="./HomePage.html" class="main">Home</a>
+			<a href="./About-me.html" class="main">About me</a>
+			<a href="./Login.html" class="main">Log in</a>
+			<a href="./Wassup.html" class="main">Wassup ?</a>
+		</div>
+		<video id="funnyVideo" width="300" height="500" controls>
+			<source src="./content/funnyVideo.mp4" type="video/mp4">
+			<source src="./content/funnyVideo.ogg" type="video/ogg">
+		</video>
+		<h1>Log in to unlock more funny things happened in my life !</h1>
+		<form id="form">
+			<div class="row">
+				<div class="col-1">
+					<label for="fname">First Name</label>
+				</div>
+				<div class="col-2">
+					<input type="text" class="formelement" id="fname" name="firstname" placeholder="Your name" required
+						pattern="[a-zA-Z0-9]{4,8}" maxlength="8"> <!-- <span class="ok">ok</span> -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1">
+					<label for="lname">Last Name</label>
+				</div>
+				<div class="col-2">
+					<input type="text" class="formelement" id="lname" name="lastname" placeholder="Your last name"
+						required pattern="[a-zA-Z0-9]{4,8}" maxlength="8"> <!-- <span class="ok">ok</span> -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1">
+					<label for="username"> User name</label>
+				</div>
+				<div class="col-2">
+					<input type="text" class="formelement" id="username" name="username" placeholder="User name"
+						required pattern="[a-zA-Z0-9]{4,8}" maxlength="8"> <!-- <span class="ok">ok</span> -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1">
+					<label for="password"> Password</label>
+				</div>
+				<div class="col-2">
+					<input type="password" class="formelement" id="password" name="password" placeholder="Password"
+						required pattern="[a-zA-Z0-9]{4,8}" maxlength="8"> <!-- <span class="ok">ok</span> -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1">
+					<label for="Country">Country</label>
+				</div>
+				<div class="col-2">
+					<select name="country" class="formelement" id="country">
+						<option value="TW">Taiwan</option>
+						<option value="MAS">Malaysia</option>
+						<option value="INA">Indonesia</option>
+						<option value="CHA">China</option>
+						<option value="HOK">Hong Kong</option>
+						<option value="JPA">Japan</option>
+						<option value="KOR">Korea</option>
+						<option value="SRI">Srilanka</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1">
+					<label for="comment">Comment</label>
+				</div>
+				<div class="col-2">
+					<textarea name="comment" id="textarea" cols="30" rows="10" class="formelement">Anything!</textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-2">
+					<button class="formelement" id="button" name="Submit"><span>Submit</span></button>
+				</div>
+			</div>
+
+		</form>
+		<!-- Add icon library -->
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="social">
+			<h1 id="subscribe">Subscribe me on these socail network to get to know more about me！</h1>
+			<!-- Add font awesome icons -->
+			<a href="https://www.facebook.com/profile.php?id=100003853592332" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/sdotrob421/" class="fa fa-instagram"></a>
+			<a href="https://www.youtube.com/results?search_query=%E8%98%87%E6%9F%8F%E7%91%8B+%E7%BE%BD%E7%90%83"
+				class="fa fa-youtube"></a>
+
+			<h2 id="right-declaring">all work © Robert Su 2021 • all rights reserved</h2>
+		</div>
+	</div>
+</body>
+
+</html>
